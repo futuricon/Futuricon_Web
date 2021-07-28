@@ -42,7 +42,7 @@ namespace Futuricon.Web.Pages
                 return BadRequest();
             }
             
-            return new OkResult();
+            return new OkObjectResult("SENDING");
         }
     }
 }

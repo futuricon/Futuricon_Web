@@ -4,23 +4,68 @@
     ViewData["Title"] = "Error";
 }
 
-<h1 class="text-danger">Error.</h1>
-<h2 class="text-danger">An error occurred while processing your request.</h2>
+<section id="error" class="shadow bg-dark radius-2 padding-dy text-center ">
+    <div class="row v-height-50 v-centred">
+        <div class="col-md-12">
+            <h1 class="font-weight-600 mb-0">
+                Error
+            </h1>
+            <div class="text-rotation">
+                <div class="item">
+                    <h6 class="h5 text-alt mt-1 mb-0 "> <span class=" text-rotating">*?@@#/!&^%$~`</span></h6>
+                </div>
+            </div>
+            @if (Model.ShowRequestId)
+            {
+                <p class="err-code">
+                    <strong>Request ID:</strong> <code>@Model.RequestId</code>
+                </p>
+            }
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-md-12 mb-6">
+            <hr class="divider divider-lg divider-center ">
+        </div>
+        <nav id="main-nav" class="col-md-4 col-sm-6 mx-auto main-nav clearfix tabbed">
+            <ul class="pl-0">
+                <!--home page nav-link-->
+                <li id="nav-home" class="outer radius-2 mb-3">
+                    <a class="inner radius-2" asp-area="" asp-page="/Index">
+                        <div class="media align-items-center ">
+                            <div class="media-body text-left">
+                                <span class="font-weight-600 font-size-13 text-uppercase  text-muted">Home</span>
+                            </div>
+                            <svg version="1.1" 
+                                 class="max-width-1 svg-icon" 
+                                 xmlns="http://www.w3.org/2000/svg" 
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                 x="0px" y="0px" viewbox="0 0 517 517" 
+                                 enable-background="new 0 0 517 517;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path d="M504.6,187.1L274.2,7.9c-4.6-3.6-10.2-5.4-15.7-5.4s-11.1,1.8-15.7,5.4L12.4,187.1c-8.6,6.7-12,18.2-8.5,28.5
+                                                 c3.6,10.3,13.3,17.3,24.2,17.3h25.6v281.6h153.6V309.7h102.4v204.8h153.6V232.9h25.6c10.9,0,20.7-6.9,24.2-17.3
+                                                 C516.7,205.3,513.2,193.8,504.6,187.1z M437.7,207.3v281.6H335.3V309.7c0-14.1-11.5-25.6-25.6-25.6H207.3
+                                                 c-14.1,0-25.6,11.5-25.6,25.6v179.2H79.3V207.3H28.1L258.5,28.1l230.4,179.2H437.7L437.7,207.3z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    </a>
+                </li>
 
-@if (Model.ShowRequestId)
-{
-    <p>
-        <strong>Request ID:</strong> <code>@Model.RequestId</code>
-    </p>
+            </ul>
+        </nav>
+    </div>
+</section>
+
+@section Scripts{ 
+    <script>
+        $(document).ready(function () {
+            $("#nav-div").hide();
+        });
+    </script>
 }
 
-<h3>Development Mode</h3>
-<p>
-    Swapping to the <strong>Development</strong> environment displays detailed information about the error that occurred.
-</p>
-<p>
-    <strong>The Development environment shouldn't be enabled for deployed applications.</strong>
-    It can result in displaying sensitive information from exceptions to end users.
-    For local debugging, enable the <strong>Development</strong> environment by setting the <strong>ASPNETCORE_ENVIRONMENT</strong> environment variable to <strong>Development</strong>
-    and restarting the app.
-</p>
