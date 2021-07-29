@@ -1210,7 +1210,7 @@ div[class*="col-"].spacer-double-xxs,
 }
 
 .btn-round {
-    font-size: 0.75rem;
+    font-size: 1rem;
     width: 2.5rem;
     height: 2.5rem;
     position: relative;

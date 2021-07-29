@@ -1,0 +1,123 @@
+﻿@page
+@model Futuricon.Web.Pages.Portfolio.IndexModel
+@{
+    ViewData["Title"] = "- Futuricon";
+}
+
+<section id="portfolio" class="shadow bg-dark radius-2 padding-dy">
+    <div class="row mb-5">
+        <div class="col">
+            <h6 class="font-weight-700  mb-0 text-uppercase mb-2">The project</h6>
+            <hr class="divider divider-left divider-lg float-left">
+        </div>
+    </div>
+    <div class="row align-items-center justify-content-center">
+        <div class="col-md-12">
+            <!--#region Cover Image-->
+            <div class="mb-4 item">
+                <div class="radius-1 shadow-inner d-block ">
+                    <div class="p-2">
+                        <div class="shadow radius-1">
+                            <img class="img-fluid radius-1" src="assets/img/blog/1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--#endregion Cover Image-->
+            <!--Title & Date-->
+            <div>
+                <h1 class="h5 font-weight-500 d-inline-block">Which design layout solution should you use ?</h1>
+                <span class="d-inline-block shadow-inner text-secondary radius-1 font-size-13 mb-3 mb-lg-0  px-3">13 Dec</span>
+            </div>
+            <!--Tags-->
+            <ul class="list-inline font-size-13">
+                <li class="list-inline-item">
+                    <span class=" fas fa-tag "></span>
+                    <span>Tags: <a href="#">Design</a> </span>
+                </li>
+            </ul>
+            <hr class="mt-3 mb-3">
+            <!--#region Content-->
+            <p>
+                Spices are used extensively in Moroccan food. Although some spices have been imported to Morocco through the Arabs for thousands of years, many ingredients—like saffron from Talaouine, mint and olives from Meknes, and oranges
+                and lemons from Fes—are home-grown, and are being exported internationally. Common spices include cinnamon, cumin, turmeric, ginger, paprika, coriander, saffron, mace, cloves, fennel, anise, nutmeg, cayenne pepper,
+                fenugreek, caraway, black pepper and sesame seeds. Twenty-seven spices are combined for the famous <a href="#">Moroccan</a> spice mixture ras el hanout.Common herbs in Moroccan cuisine include mint, parsley, coriander,
+                oregano, peppermint, marjoram, verbena, sage and bay laurel.
+            </p>
+            <p>
+                Morocco produces a large range of Mediterranean fruits, vegetables and even some tropical ones. Common meats include beef, goat, mutton and lamb, chicken and seafood, which serve as a base for the cuisine. Characteristic
+                flavorings include lemon pickle, argan oil, cold-pressed, unrefined olive oil and dried fruits. As in <em>Mediterranean cuisine</em> in general, the staple <a href="#">ingredients</a> include wheat, used for bread and
+                couscous, and olive oil; the third Mediterranean staple, the grape, is eaten as a dessert, though a certain amount of wine is made in the country
+            </p>
+            <h4 class="h5 font-weight-500">Morrocan Couscous</h4>
+            <p>
+                The main Moroccan dish most people are familiar with is couscous, the old national delicacy. Beef is the most commonly eaten red meat in Morocco, <a href="#">usually</a> eaten in a tagine with a wide selection of vegetables.
+                Chicken is also very commonly used in tagines, or roasted.Lamb is also heavily consumed, and since Moroccan sheep breeds store most of their fat in their tails, Moroccan lamb does not have the pungent flavour that Western
+                lamb and mutton have.
+            </p>
+            <figure class="text-center mt-5 mb-5 w-lg-85 mx-auto item">
+                <div class="radius-1 shadow-inner d-block ">
+                    <div class="  p-2  ">
+                        <div class="shadow radius-1">
+                            <img class="img-fluid radius-1" src="assets/img/blog/2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <figcaption class="small mt-2 text-muted">Moroccan Couscous with vegetables</figcaption>
+            </figure>
+            <h5 class="h6 font-weight-500">Moroccan Couscous</h5>
+            <p>
+                Usually, seasonal fruits rather than <a href="#">cooked</a> desserts are served at the close of a meal. A common dessert is kaab el ghzal ("gazelle's horns"), a pastry stuffed with almond paste and topped with sugar. Another
+                is "Halwa chebakia", pretzel-shaped dough deep-fried, soaked in honey and sprinkled with sesame seeds; it is eaten during the month of <a href="#">Ramadan</a>. Coconut fudge cakes, 'Zucre Coco', are popular also.
+            </p>
+            <ul class="mb-0 font-size-15">
+                <li>The Art of Moroccan Cuisine</li>
+                <li>An Introduction to Mediterranean Cuisine</li>
+                <li><em>Moroccan cuisine is influenced by Morocco's interactions</em></li>
+                <li>Mediterranean cuisine</li>
+            </ul>
+            <!--#endregion Content-->
+        </div>
+        <!--#region Share Buttons-->
+        <div class="col-xl-9 col-lg-8 col-md-10">
+            <hr class="my-6">
+            <ul class="list-inline  mb-0  text-center">
+                <li class="list-inline-item outer radius-2 mr-1 mb-2 mb-lg-0">
+                    <!--GitHub link of current project-->
+                    <a class="inner btn btn-round btn-icon" href="#">
+                        <span class="fab fa-github btn-icon-inner"></span>
+                    </a>
+                </li>
+                <li class="list-inline-item outer radius-2 mr-1 mb-2 mb-lg-0">
+                    <!--Facebook share link-->
+                    <a id="fb-share" class="inner btn btn-round btn-icon">
+                        <span class="fab fa-facebook-f btn-icon-inner"></span>
+                    </a>
+                </li>
+                <li class="list-inline-item outer radius-2 mr-1 mb-2 mb-lg-0">
+                    <!--Facebook share link-->
+                    <a id="tg-share" class="inner btn btn-round btn-icon">
+                        <span class="fab fa-telegram-plane btn-icon-inner"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--#endregion Share Buttons-->
+    </div>
+</section>
+
+@section Scripts{ 
+    <script>
+        $(function () {
+            $("#nav-about").hide();
+            $("#nav-contacts").hide();
+            $("#nav-search").show();
+            var curentUrl = window.location.href;
+            var encodedUrl = encodeURIComponent(curentUrl);
+            var fbShareUrl = "http://www.facebook.com/share.php?u=" + encodedUrl;
+            var tgShareUrl = "https://t.me/share/url?url=" + encodedUrl;
+            $('#fb-share').attr("href", fbShareUrl);
+            $('#tg-share').attr("href", tgShareUrl);
+        });
+    </script>
+}

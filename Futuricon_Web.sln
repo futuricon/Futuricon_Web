@@ -7,11 +7,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D8AEE402-E7D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F383E41C-AD3D-4E46-AE35-609E1121FC23}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Futuricon.Domain", "src\Futuricon.Domain\Futuricon.Domain.csproj", "{0388D270-ADD6-4D4D-8AD0-138D4AD5DFC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Futuricon.Domain", "src\Futuricon.Domain\Futuricon.Domain.csproj", "{0388D270-ADD6-4D4D-8AD0-138D4AD5DFC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Futuricon.Infrastructure", "src\Futuricon.Infrastructure\Futuricon.Infrastructure.csproj", "{589DB42F-D006-4498-9CF0-69731AB4C20C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Futuricon.Infrastructure", "src\Futuricon.Infrastructure\Futuricon.Infrastructure.csproj", "{589DB42F-D006-4498-9CF0-69731AB4C20C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Futuricon.Web", "src\Futuricon.Web\Futuricon.Web.csproj", "{CA5547A8-9976-4813-AD2E-27D16D970969}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Futuricon.Web", "src\Futuricon.Web\Futuricon.Web.csproj", "{CA5547A8-9976-4813-AD2E-27D16D970969}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
