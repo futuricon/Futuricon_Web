@@ -4,10 +4,4 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Entities\Base\" />
-    <Folder Include="Entities\Portfolio\" />
-    <Folder Include="Interfaces\" />
-  </ItemGroup>
-
 </Project>

@@ -1478,9 +1478,9 @@ svg.svg-icon.stroke-12 {
     }
     .title {
         transform: rotate(90deg);
-        left: -15px;
+        left: -33px;
         position: absolute;
-        top: -0.9375rem;
+        top: -2rem;
     }
     .info-before:before {
         content: "";
@@ -1581,4 +1581,29 @@ svg.svg-icon.stroke-12 {
 .serv-icon {
     color: #0487cc;
     font-size: 23px;
+}
+
+.err-code {
+    margin-top: 50px;
+}
+
+    .err-code code {
+        font-size: 18px;
+        color: #0487cc;
+    }
+
+.disabled {
+    pointer-events: none !important;
+}
+
+li.active a.active span {
+    color: #0487cc;
+}
+
+.radius-1-5 {
+    border-radius: 1.5rem;
+}
+
+.lang-c {
+    cursor: default;
 }

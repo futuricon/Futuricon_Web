@@ -6,6 +6,10 @@
     <meta charset="utf-8">
     <title>@ViewData["Title"]</title>
 
+    <meta name="google-site-verification" content="N_MSgx_6ym-nPFYWhAWCL9uUEKCkHhUBU90AFpj5yKw" />
+    <meta name="yandex-verification" content="b76dbb50b3a1edd1" />
+    <meta name="msvalidate.01" content="1A16774DB6B0E6D5D2221D8812636C53" />
+
     <meta name="author" content="Sukhrob Kudratov" />
     <meta name="keywords" content="Sukhrob, Kudratov, Sukhrob Kudratov, Suxrob, Suxrob Kudratov, Futuricon, .Net, Developer, Programmer, C#, Asp.Net, .Net Core, WPF, Full-Stack" />
     <meta name="description" content="Sukhrob Kudratov's website, .Net Developer specializing in Desktop and Web development. Experienced with all stages of the development cycle for dynamic web projects." />
@@ -27,15 +31,16 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="~/favicon.png" />
     <!-- Css -->
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-    <link href="css/main.css" rel="stylesheet" type="text/css" media="all">
-    <link href="css/venobox.css" rel="stylesheet" type="text/css" media="all">
-    <link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
-    <link href="css/fonts.css" rel="stylesheet" type="text/css" media="all">
-    <link href="css/owl-carousel/owl.carousel.css" rel="stylesheet" media="all">
-    <link href="css/owl-carousel/owl.theme.css" rel="stylesheet" media="all">
-    <link href="css/owl-carousel/owl.transitions.css" rel="stylesheet" media="all">
+    <link href="~/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="~/css/main.css" rel="stylesheet" type="text/css" media="all">
+    <link href="~/css/venobox.css" rel="stylesheet" type="text/css" media="all">
+    <link href="~/css/animate.css" rel="stylesheet" type="text/css" media="all">
+    <link href="~/css/fonts.css" rel="stylesheet" type="text/css" media="all">
+    <link href="~/css/owl-carousel/owl.carousel.css" rel="stylesheet" media="all">
+    <link href="~/css/owl-carousel/owl.theme.css" rel="stylesheet" media="all">
+    <link href="~/css/owl-carousel/owl.transitions.css" rel="stylesheet" media="all">
     <link href="~/css/css.css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    @await RenderSectionAsync("CSS", required: false).ConfigureAwait(false)
 </head>
 
 <body>
@@ -215,7 +220,7 @@
         <div class="blurred-content"></div>
         <div class="container spacer-xlg">
             <div class="row ">
-                <div class="col-lg-9 mx-auto my-order-switch-1 ">
+                <div class="col-lg-9 mx-auto my-order-switch-1">
                     @RenderBody()
                     <!--#region footer-->
                     <div class="row mt-4 justify-content-center ">
@@ -299,7 +304,7 @@
                                     </li>
                                     <!--portfolio page nav-link-->
                                     <li id="nav-portfolio" class="outer radius-2 mb-3">
-                                        <a class="inner radius-2" asp-area="Portfolio" asp-page="/List">
+                                        <a class="inner radius-2" asp-page="/Portfolio/List">
                                             <div class="media  align-items-center ">
                                                 <div class="media-body text-left">
                                                     <span class="font-weight-600 font-size-13 text-uppercase  text-muted">Portfolio</span>
