@@ -23,6 +23,10 @@ Created by : mutationthemes
 
 /*Preloader*/
 
+.bg-dark {
+    opacity: 0.9 !important;
+}
+
 .loader {
     background: #2c2d30;
     bottom: 0;
@@ -1554,9 +1558,15 @@ svg.svg-icon.stroke-12 {
     height: 2.5rem;
 }
 
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+    .port-h1 {
+        font-size: 1.5rem;
+    }
+}
 
-@media(min-width:768px) {}
+@media(min-width:768px) {
+    
+}
 
 @media (max-width: 575px) {
     h1,
@@ -1568,7 +1578,7 @@ svg.svg-icon.stroke-12 {
         font-size: 1.875rem
     }
     h5,
-    .h5 {
+    .h5, .port-h1 {
         font-size: 1.15rem;
     }
 }

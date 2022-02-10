@@ -53,5 +53,5 @@ namespace Futuricon.Infrastructure.Repositories
             }
             _disposed = true;
         }
-    }s
+    }
 }
